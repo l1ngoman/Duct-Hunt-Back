@@ -3,9 +3,9 @@ class DucksController < ApplicationController
 
   # GET / (root)
   def home
-    render "home"
+    put "You're on the home page."
   end
-  
+
   # GET /ducks
   def index
     @ducks = Duck.all
